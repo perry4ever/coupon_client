@@ -1,0 +1,19 @@
+.swiper{
+  height: 100%;
+  width:100%;
+}
+
+.swiper swiper{
+  height: 100%;
+  width:100%;
+}
+
+.swiper image{
+  height: 100%;
+  width: 100%;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+}

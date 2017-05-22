@@ -1,0 +1,7 @@
+<view class="page"> 
+  <swiper >
+    <swiper-item>
+      <image src="../../images/welcomePic1.JPG" class="slide-image" mode="aspectFill" bindload="bindload" />
+    </swiper-item>
+  </swiper>
+</view>

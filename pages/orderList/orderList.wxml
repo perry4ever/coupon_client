@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">订单流水</view>
+    </view>
+
+    <scroll-view class="page__bd page__bd_spacing">
+        <view class="kind-list">
+            <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+                <view class="weui-cells__title">{{item.time}}</view>
+                <view class="weui-cells__title orderCompleted">已完成</view>
+                <view class="kind-list__item weui-cells weui-cells_after-title">
+                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+                        <image class="kind-list__img" src="../../images/{{item.id}}.jpg"></image>
+                        <view class="weui-flex__item">{{item.name}}</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access">详细说明</view>
+                    </view>
+                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                        <view class="weui-cells-sub {{item.open ? 'weui-cells_show' : ''}}">
+                            <block wx:for-items="{{item.goods}}" wx:for-item="good" wx:key="*item" >
+                                <view class="weui-cells-sub">
+                                    <text class="weui-cell__bd">{{good.name}}</text>
+                                    <text class="weui-cells__title_right">￥14</text>
+                                    <text class="weui-cells__title_mid">{{good.amount}}
+                                    </text>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="weui-cells-sub">
+                            <text class="weui-cell__bd">总价</text>
+                            <text class="weui-cells__title_right">￥56</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </scroll-view>
+</view>

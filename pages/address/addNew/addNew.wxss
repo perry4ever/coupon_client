@@ -1,0 +1,7 @@
+.icon {
+    margin-bottom: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width:20px; 
+    height: 20px;
+}

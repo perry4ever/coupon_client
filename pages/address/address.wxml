@@ -1,0 +1,36 @@
+
+<view class="address-list">
+    <template is="prompt" data="{{ prompt }}"/>
+    <view class="scroll-list">
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">boilingCapucinooooo 先生</view>
+                    <view class="weui-media-box__desc">15501101582</view>
+                    <view class="weui-media-box__desc">北京市海淀区西土城路10号北京邮电大学</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta text-orangered">默认地址</view>
+                    </view>
+                    <view class="edit"  bindtap="tapEdit">
+                        <image class="icon" src="../../images/Ui_Image_edit.png" />
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">lalaland 女士</view>
+                    <view class="weui-media-box__desc">1322145656</view>
+                    <view class="weui-media-box__desc">北京市海淀区西土城路10号北京邮电大学</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">设为默认</view>
+                    </view>
+                    <view class="edit"  bindtap="tapEdit">
+                        <image class="icon" src="../../images/Ui_Image_edit.png" />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="btn-plus" bindtap="tapAdd">
+            <image class="icon" src="../../images/Ui_Image_plus_slcted.png" />
+            <text>新增地址</text>
+        </view>
+    </view>
+</view>

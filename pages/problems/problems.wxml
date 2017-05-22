@@ -1,0 +1,21 @@
+<view class="page" style="background-image:url('../../images/lovelive.jpg')">
+    <view class="page__hd">
+        <view class="page__title">Problems</view>
+        <view class="page__desc">常见问题</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">打不开某个页面？</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">服务器向我们提出了一个问题，我们正在努力着手解决...</view>
+        </view>
+        <view class="weui-cells__title">付款中卡着不动一直在转圈圈？</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">服务器向我们提出了一个问题，我们正在努力着手解决...</view>
+        </view>
+        <view class="weui-cells__title">图片显示不出来？</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">服务器向我们提出了一个问题，我们正在努力着手解决...</view>
+        </view>
+
+    </view>
+</view>

@@ -1,0 +1,162 @@
+<view class="page">
+    <view class="wx-text_setion_titleTextBar">
+        <text class="wx-text_setion_title" >关注店铺推送</text>
+    </view>
+    <swiper indicator-dots="true">
+        <swiper-item class="swiper-item">
+            <navigator class="wx-navigator_item item4" url="../fetchCoupon/fetchCoupon">
+                <text class="wx-text_sliteitem_title" >艺美人生美容美发：满88元减15</text>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="../../images/maisong.png"/>
+            </navigator>
+        </swiper-item>
+        <swiper-item  >
+            <navigator class="wx-navigator_item item2" url="../fetchCoupon/fetchCoupon">
+                <text class="wx-text_sliteitem_title">鲸吞咖喱屋：代金5元</text>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="../../images/manzhe.png"/>
+            </navigator>
+        </swiper-item>
+        <swiper-item  >
+            <navigator class="wx-navigator_item item3" url="../fetchCoupon/fetchCoupon">
+                <text class="wx-text_sliteitem_title" >杨记黄焖鸡：满50元打8折</text>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="../../images/manjian.png"/>
+            </navigator>
+        </swiper-item>
+        <swiper-item  >
+            <navigator class="wx-navigator_item" url="../fetchCoupon/fetchCoupon" >
+                <text class="wx-text_sliteitem_title" >杨国福麻辣烫：买1送1</text>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="../../images/daijin.png"/>
+            </navigator>
+        </swiper-item>
+    </swiper>
+
+
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="搜索"/>
+            </view>
+            <label class="weui-search-bar__label" bindtap="searchTab">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">点击此开始搜索</view>
+            </label>
+        </view>
+    </view>
+
+
+    
+
+
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
+                            <view class="wx-view_movilelist_item" >
+                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="../../images/hairCut.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                <view class="wx-view_6zMKSh" >
+                                    <text class="wx-image_movielist_item_title" >艺美人生美容美发</text>
+                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
+                                    <view class="wx-image_itemSubImageView">
+                                        <image class="wx-image_itemSubImage"src="../../images/daijin.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/manjian.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/manzhe.png"/>
+                                    </view>
+                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
+                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
+                                </view>
+                            </view>
+                        </navigator>
+                    </scroll-view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
+                            <view class="wx-view_movilelist_item" >
+                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="../../images/1.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                <view class="wx-view_6zMKSh" >
+                                    <text class="wx-image_movielist_item_title" >杨国福麻辣烫</text>
+                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
+                                    <view class="wx-image_itemSubImageView">
+                                        <image class="wx-image_itemSubImage"src="../../images/daijin.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/maisong.png"/>
+                                    </view>
+                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
+                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
+                                </view>
+                            </view>
+                        </navigator>
+
+                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
+                            <view class="wx-view_movilelist_item" >
+                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="../../images/2.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                <view class="wx-view_6zMKSh" >
+                                    <text class="wx-image_movielist_item_title" >鲸吞咖喱屋</text>
+                                    <text class="wx-image_movielist_item_score allstar45">9.0</text>
+                                    <view class="wx-image_itemSubImageView">
+                                        <image class="wx-image_itemSubImage"src="../../images/manzhe.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/daijin.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/manjian.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/maisong.png"/>
+                                    </view>
+                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
+                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
+                                </view>
+                            </view>
+                        </navigator>
+
+                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
+                            <view class="wx-view_movilelist_item" >
+                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="../../images/3.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                <view class="wx-view_6zMKSh" >
+                                    <text class="wx-image_movielist_item_title" >杨记黄焖鸡</text>
+                                    <text class="wx-image_movielist_item_score allstar45">9.0</text>
+                                    <view class="wx-image_itemSubImageView">
+                                        <image class="wx-image_itemSubImage"src="../../images/maisong.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/manzhe.png"/>
+                                    </view>
+                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
+                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
+                                </view>
+                            </view>
+                        </navigator>
+
+                    </scroll-view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
+                            <view class="wx-view_movilelist_item" >
+                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="../../images/ktv.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                <view class="wx-view_6zMKSh" >
+                                    <text class="wx-image_movielist_item_title" >果冻ktv发</text>
+                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
+                                    <view class="wx-image_itemSubImageView">
+                                        <image class="wx-image_itemSubImage"src="../../images/daijin.png"/>
+                                        <image class="wx-image_itemSubImage"src="../../images/manzhe.png"/>
+                                    </view>
+                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
+                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
+                                </view>
+                            </view>
+                        </navigator>
+                    </scroll-view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+

@@ -1,0 +1,33 @@
+<view class="  wx-view_movie_top">
+    <image class="wx-image_movie_cover" src="../../images/manzhe.png"/>
+</view>
+<view class="  wx-view_movie_info">
+    <text class="wx-text_title">满100元打7折
+    </text>
+    <text class="wx-text_description">店内消费任意商品满100元打7折
+    </text>
+</view>
+
+<view class="wx-view_section section_actors">
+    <text class="wx-text_section_title">优惠券ID</text>
+    <text class="wx-text_description">\n4564616154684</text>
+</view>
+
+<view class="wx-view_section section_actors">
+    <text class="wx-text_section_title">领券日期</text>
+    <text class="wx-text_description">\n2017-03-17</text>
+</view>
+
+<view class="wx-view_section section_actors">
+    <text class="wx-text_section_title">使用期限</text>
+    <text class="wx-text_description">\n    2017-09-16</text>
+</view>
+
+<view class="page">
+    <navigator url="../QRCode/QRcode?title=www.baidu.com">
+        <button class="weui-btn" type="primary">生成二维码</button>
+    </navigator>
+</view>
+<view class="page">
+    <button class="weui-btn" type="warn">删除该优惠券</button>
+</view>

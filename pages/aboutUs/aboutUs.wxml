@@ -1,0 +1,28 @@
+<view class="page" style="background-image:url('../../images/lovelive.jpg')">
+    <view class="page__hd">
+        <view class="page__title">About Us</view>
+        <view class="page__desc">关于我们</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">版本号：</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">10.5649894116.145beta</view>
+        </view>
+        <view class="weui-cells__title">开发团队成员：</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">陈培林</view>
+        </view>
+        <view class="weui-cells__title">前端攻城狮：</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">陈培林</view>
+        </view>
+        <view class="weui-cells__title">后端程序猿：</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">陈培林</view>
+        </view>
+        <view class="weui-cells__title">用户界面射击狮：</view>
+        <view class="weui-cell">
+            <view class="weui-cells__title">陈培林</view>
+        </view>
+    </view>
+</view>

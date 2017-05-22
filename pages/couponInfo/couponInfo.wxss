@@ -1,0 +1,5 @@
+@import '../detail/detail.wxss';
+
+.wx-image_movie_cover{height: 400rpx; width: 600rpx; }
+.wx-view_movie_top{height: 450rpx; width:750rpx;  background-color: #F8F8FF
+; display: flex; flex-direction: row; justify-content: center; align-items: center; }

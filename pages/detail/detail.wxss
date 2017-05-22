@@ -1,0 +1,43 @@
+.userinfo-avatar {
+	width: 80rpx;
+	height: 80rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+.wx-view_movie_top{height: 350px; background-color: rgb(127, 96, 0); display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+.wx-text_item_name{text-align: center; font-size: 14px; padding-top: 5px; }
+.wx-text_kGXxsa{font-size: 13px; color: rgb(84, 84, 84); line-height: 1.5em; margin-bottom: 15px; }
+.wx-text_71u3gA{font-size: 12px; color: rgb(27, 91, 166);  display: block;}
+.wx-view_WnUrtw{flex: 1 1 0%; margin-left: 10px; }
+.wx-view_1{vertical-align:middle; }
+.wx-view_actors_item{display: block; flex-direction: column; width: 100px; justify-content: center; margin-right: 10px; flex-grow: 0; flex-shrink: 0; flex-basis: auto; }
+
+.wx-view_comment_item{display: block; flex-direction: column; width: 400rpx; height: 700rpx; justify-content: center; margin-right: 10px; flex-grow: 0; flex-shrink: 0; flex-basis: auto; }
+.comment_operate{display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; position: absolute; top: 360rpx}
+.listitem_creattime{font-size: 12px; color: rgb(186, 186, 186); padding-right: 2px; }
+
+
+.wx-view_movie_info{padding: 20px; display: block; justify-content: flex-end; border-style: none none solid; border-width: 1px; border-color: rgb(196, 196, 196); }
+.wx-view_movie_score{width: 100px; align-self: flex-end; order: 1; display: flex; height: 100px; background-color: rgb(255, 255, 255); flex-direction: column; align-items: center; justify-content: center; float: right; box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -ms-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -o-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -moz-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -webkit-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); }
+.wx-text_score_value{text-align: center; font-size: 32px; height: 40px; }
+.wx-text_score_stars{font-size: 14px; text-align: center; color: rgb(251, 176, 0); height: 12px; background-image: url("../../images/star.png"); background-size: 65px 132px; width: 65px; margin-bottom: 5px; background-position-x: 50%; background-position-y: 50%; }
+.wx-image_movie_cover{width: 50%; }
+
+.wx-scroll-menu{width: 750rpx; height:300rpx }
+.wx-scroll-comment{width: 750rpx; height:400rpx; overflow: hidden}
+.wx-text_score_uv{font-size: 12px; text-align: center; color: rgb(153, 153, 153); }
+.wx-text_title{margin-right: 100px; font-size: 28px; font-family: "andale mono"; font-weight: 600; margin-bottom: 10px; }
+.wx-text_description{margin-right: 100px; font-size: 13px; color: rgb(153, 153, 153); line-height: 1.2em; margin-bottom: 5px; }
+.wx-view_section.section_actors{padding-right: 0px; }
+.wx-view_section{padding: 20px 20px 20px; padding-top: 20px; }
+.wx-text_section_title{font-weight: 600; margin-bottom: 20px; }
+.wx-image_movielist_item_actors.wx-text_description{color: #999999; }
+.wx-view_grm9lE{display: flex; }
+.wx-view_actors_item{display: block; flex-direction: column; width: 100px; justify-content: center; margin-right: 10px; flex-grow: 0; flex-shrink: 0; flex-basis: auto; }
+.wx-image_item_avatar{width: 100px; height: 80px; padding-bottom:0; padding-top: 0; margin-bottom: 0; margin-top: 0;}
+.wx-text_item_name.left{text-align: left; }
+
+
+.wx-input_olF6xn{text-align: left; background-color: rgb(255, 255, 255); margin-bottom: 10px; padding: 5px 10px; width: 675rpx; display: inline-block; height: 150rpx; border-style: none; outline: none; font-size: 14px; font-family: "Microsoft YaHei"; }
