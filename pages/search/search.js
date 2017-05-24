@@ -1,8 +1,10 @@
 // pages/search/search.js
 Page({
+    display: 0,
    data: {
         inputShowed: false,
-        inputVal: ""
+        inputVal: "",
+        display:0
     },
     showInput: function () {
         this.setData({
@@ -26,13 +28,11 @@ Page({
         });
     },
     submit: function (e){
-        console.log(this.data.inputVal);
+        var that = this;
         wx.request({
-          url: 'http://127.0.0.1:5000/CustomerLogin',
+          url: 'http://127.0.0.1:5000/searchMerchant',
           data: {
-            nickName: this.data.userInfo.nickName,
-            openId: this.data.userInfo.openId,
-            avatarUrl: this.data.userInfo.avatarUrl,
+            shopName: this.data.inputVal
             // userInfo
             // nickName: 'nickName',
             // openId: '5615614651451455',
@@ -44,6 +44,14 @@ Page({
           method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
           // header: {}, // 设置请求的 header
           success: function (res) {
+            console.log(res.data)
+            if(res.data!=null){
+              that.setData
+            }
+            else{
+              display: -1
+            }
+            console.log(this.data.display);
             // success
           },
           fail: function (res) {
@@ -55,3 +63,7 @@ Page({
         })
     }
 })
+
+/*
+Bobs Shop
+ */
