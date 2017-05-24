@@ -19,7 +19,7 @@
             <view class="weui-panel__bd">
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetailTap">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/maisong.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/maisong.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">买一送一</view>
@@ -28,7 +28,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/manjian.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">满50减10</view>
@@ -37,7 +37,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetailTap">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/manzhe.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">买一送一</view>
@@ -46,7 +46,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active"  bindtap="gotoDetailTap">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/daijin.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/daijin.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">买一送一</view>
@@ -55,7 +55,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/manjian.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">满50减10</view>
@@ -64,7 +64,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/manjian.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">满50减10</view>
@@ -73,7 +73,7 @@
                 </navigator>
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../../images/manjian.png" />
+                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">满50减10</view>

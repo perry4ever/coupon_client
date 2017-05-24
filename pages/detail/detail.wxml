@@ -1,5 +1,5 @@
 <view class="  wx-view_movie_top">
-    <image class="wx-image_movie_cover" src="../../images/2.jpg"/>
+    <image class="wx-image_movie_cover" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>
 </view>
 <view class="  wx-view_movie_info">
     <view class="wx-view_movie_score">
@@ -22,27 +22,27 @@
     <scroll-view class="wx-scroll-menu" lower-threshold="50" scroll-x="True" style="overflow-x: auto; overflow-y: auto; " upper-threshold="50">
         <view class="  wx-view_grm9lE" > 
             <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="../../images/2.jpg"/>                
+                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
                 <text class="wx-text_item_name">   照烧鸡排饭  </text> 
                 <text class="wx-text_description">   \n17元  </text>
             </view> 
             <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="../../images/2.jpg"/>                
+                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
                 <text class="wx-text_item_name">   照烧鸡排饭  </text> 
                 <text class="wx-text_description">   \n16元  </text>
             </view> 
             <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="../../images/2.jpg"/>                
+                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
                 <text class="wx-text_item_name">   照烧鸡排饭  </text> 
                 <text class="wx-text_description">   \n14元  </text>
             </view> 
             <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="../../images/2.jpg"/>                
+                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
                 <text class="wx-text_item_name">   照烧鸡排饭  </text> 
                 <text class="wx-text_description">   \n11元  </text>
             </view> 
             <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="../../images/2.jpg"/>                
+                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
                 <text class="wx-text_item_name">   照烧鸡排饭  </text> 
                 <text class="wx-text_description">   \n13元  </text>
             </view> 
@@ -55,7 +55,7 @@
     <scroll-view class="  wx-scroll-comment" lower-threshold="50" scroll-x="True" style="overflow-x: auto; overflow-y: hidden; " upper-threshold="50">
         <view class="wx-view_grm9lE" > 
             <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="../../images/userIcon.png"/>
+                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
                 <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
                 <text class="wx-text_kGXxsa">好评好评评</text>
                 <view class="comment_operate">
@@ -63,7 +63,7 @@
                 </view>
             </view> 
             <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="../../images/userIcon.png"/>
+                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
                 <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
                 <text class="wx-text_kGXxsa">好评好评评</text>
                 <view class="comment_operate">
@@ -71,7 +71,7 @@
                 </view>
             </view> 
             <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="../../images/userIcon.png"/>
+                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
                 <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
                 <text class="wx-text_kGXxsa">好评好评评</text>
                 <view class="comment_operate">
@@ -79,7 +79,7 @@
                 </view>
             </view> 
             <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="../../images/userIcon.png"/>
+                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
                 <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
                 <text class="wx-text_kGXxsa">好评好评好评好评好评好评好评好评</text>
                 <view class="comment_operate">
@@ -87,7 +87,7 @@
                 </view>
             </view> 
             <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="../../images/userIcon.png"/>
+                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
                 <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
                 <text class="wx-text_kGXxsa">好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评</text>
                 <view class="comment_operate">

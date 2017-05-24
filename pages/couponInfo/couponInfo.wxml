@@ -1,5 +1,5 @@
 <view class="  wx-view_movie_top">
-    <image class="wx-image_movie_cover" src="../../images/manzhe.png"/>
+    <image class="wx-image_movie_cover" src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
 </view>
 <view class="  wx-view_movie_info">
     <text class="wx-text_title">满100元打7折

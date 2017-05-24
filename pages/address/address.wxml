@@ -12,7 +12,7 @@
                         <view class="weui-media-box__info__meta text-orangered">默认地址</view>
                     </view>
                     <view class="edit"  bindtap="tapEdit">
-                        <image class="icon" src="../../images/Ui_Image_edit.png" />
+                        <image class="icon" src="http://coupon-1253611430.costj.myqcloud.com/Ui_Image_edit.png" />
                     </view>
                 </view>
                 <view class="weui-media-box weui-media-box_text">
@@ -23,13 +23,13 @@
                         <view class="weui-media-box__info__meta">设为默认</view>
                     </view>
                     <view class="edit"  bindtap="tapEdit">
-                        <image class="icon" src="../../images/Ui_Image_edit.png" />
+                        <image class="icon" src="http://coupon-1253611430.costj.myqcloud.com/Ui_Image_edit.png" />
                     </view>
                 </view>
             </view>
         </view>
         <view class="btn-plus" bindtap="tapAdd">
-            <image class="icon" src="../../images/Ui_Image_plus_slcted.png" />
+            <image class="icon" src="http://coupon-1253611430.costj.myqcloud.com/Ui_Image_plus_slcted.png" />
             <text>新增地址</text>
         </view>
     </view>

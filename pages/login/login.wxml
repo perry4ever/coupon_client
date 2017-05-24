@@ -1,8 +1,8 @@
 <view class="login-container">
 	<view class="login" wx:if="{{ !logged }}">
 		<view class="app-info">
-			<image class="app-logo" src="../../images/logo.PNG"/>
-			<text class="app-name">coupon that's everlasting</text>
+			<image class="app-logo" src="{{userInfo.avatarUrl}}"/>
+			<text class="app-name">{{userInfo.nickName}}</text>
 		</view>
 		<view class="alert">
 			<view class="alert-title">网页由该小程序开发，请确认授权以下信息</view>

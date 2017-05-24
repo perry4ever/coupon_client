@@ -2,42 +2,51 @@ const App = getApp()
 
 Page({
     data: {
-    userInfo: {}
-  },
+        userInfo: {},
+        nickName:0,
+        avatarUrl:0,
+        openId:0
+    },
     onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    App.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
+      console.log('onLoad')
+      var that = this
+      //调用应用实例的方法获取全局数据
+      App.getUserInfo(function (userInfo) {
+        //更新数据
+        that.setData({
+          userInfo: userInfo
+        })
+        that.update()
       })
-    })
+    },
+  onReady: function(){
+    console.log(this.data.userInfo)
     wx.request({
-      url: 'https://127.0.0.1:8080',
+      url: 'http://127.0.0.1:5000/CustomerLogin',
       data: {
-        testItem:1,
-        testItem1:'fsadfadsfas',
-        testItem2:{
-          subItem:'fdsafads',
-          subItem:32424
-        }
-
+        nickName: this.data.userInfo.nickName,
+        openId: this.data.userInfo.openId,
+        avatarUrl: this.data.userInfo.avatarUrl,
+        // userInfo
+        // nickName: 'nickName',
+        // openId: '5615614651451455',
+        // avatarUrl: 'this.avatarUrl'
       },
-      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
-      success: function(res){
+      success: function (res) {
         // success
       },
-      fail: function(res) {
+      fail: function (res) {
         // fail
       },
-      complete: function(res) {
+      complete: function (res) {
         // complete
       }
     })
-    console.log("已经执行完request了");
   },
     btnTab: function(event) {
     	wx.switchTab ({
@@ -45,3 +54,4 @@ Page({
         })
     }
 })
+
