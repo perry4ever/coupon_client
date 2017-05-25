@@ -41,7 +41,12 @@ Page({
         var merchantList=wx.getStorageSync('merchantList')
 
         for (var i = 0; i < merchantList.length;i+=1){
-          bannerImg
+            var aMerchant=merchantList[i]
+            bannerImgUrl.push(config.imgUrlPre+aMerchant.merchantId+config.imgUrlSub)
+            bannerName.push(aMerchant.merchantName)
+            bannerAddress.push(aMerchant.address)
+            bannerAveragePrice.push(aMerchant.averagePrice)
+            bannerScore.push(aMerchant.score)
         }
         
     },
