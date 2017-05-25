@@ -138,7 +138,7 @@
                             <view class="wx-view_movilelist_item" >
                                 <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/ktv.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
                                 <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >果冻ktv发</text>
+                                    <text class="wx-image_movielist_item_title" >果冻ktv</text>
                                     <text class="wx-image_movielist_item_score allstar45">8.5</text>
                                     <view class="wx-image_itemSubImageView">
                                         <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>

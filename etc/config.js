@@ -1,4 +1,7 @@
-export default {
-	basePath: 'https://www.skyvow.cn/api', 
-	fileBasePath: 'https://www.skyvow.cn/', 
+var imgUrlPre = 'http://coupon-1253611430.costj.myqcloud.com/'
+var imgUrlSub = '.png'
+
+module.exports = {
+  imgUrlPre: imgUrlPre,
+  imgUrlSub: imgUrlSub
 }

@@ -1,4 +1,6 @@
-<view class="page">
+<import src="../wxSearch/wxSearch.wxml"/>
+
+<!--<view class="page">
     <view class="page__bd">
         <view class="weui-search-bar">
             <view class="weui-search-bar__form">
@@ -16,5 +18,26 @@
             </view>
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="submit">确定</view>
         </view>
+        <template is="wxSearch" data="{{wxSearchData}}"/>
     </view>
+</view>-->
+
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" />
+    <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
+  </view>
 </view>
+<view class="wxSearch" bindtap="wxSearchTap"  style="display:{{wxSearchData.view.isShow ? 'block':'none'}};height:{{wxSearchData.view.seachHeight}}px;top:{{wxSearchData.view.barHeight}}px;">
+    <view  class="wxSearchInner">
+
+        <view class="wxSearchMindKey">
+            <view class="wxSearchMindKeyList">
+                <block wx:for="{{wxSearchData.mindKeys}}">
+                    <view class="wxSearchMindKeyItem" bindtap="wxSearchKeyTap" value="{{item}}" data-key="{{item}}">{{item}}</view>
+                </block>
+            </view>
+        </view>
+
+    </view>
+  </view>
