@@ -4,6 +4,12 @@ const app = getApp()
 
 Page({
     data: {
+        bannerImgUrl:[],
+        bannerName:[],
+        bannerScore:[],
+        bannerAveragePrice:[],
+        bannerAddress:[],
+        bannerCouponUrl:[],
         tabs: ["服务", "餐饮", "娱乐"],
         activeIndex: 1,
         sliderOffset: 0,
@@ -31,6 +37,13 @@ Page({
                 });
             }
         });
+
+        var merchantList=wx.getStorageSync('merchantList')
+
+        for (var i = 0; i < merchantList.length;i+=1){
+          bannerImg
+        }
+        
     },
     tabClick: function (e) {
         this.setData({
