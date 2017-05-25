@@ -6,6 +6,17 @@ var app = getApp();
 
 // 创建页面实例对象
 Page({
+  data:{
+    currentMerchant:{}
+  },
+  onLoad: function(){
+    var tmp=wx.getStorageSync('chosenMerchantName')
+    var tmpMerchant=wx.getStorageSync(tmp)
+    console.log('in fetch onload' + tmpMerchant)
+    this.setData({
+      currentMerchant:tmpMerchant
+    })
+  },
   tapToast: function () {
         wx.showToast({
             title: '领取成功！',

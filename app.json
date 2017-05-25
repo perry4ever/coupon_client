@@ -34,23 +34,23 @@
     "backgroundColor": "#fff",
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_home.png",
-      "selectedIconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_home_slcted.png",
+      "iconPath": "images/Ui_Image_home.png",
+      "selectedIconPath": "images/Ui_Image_home_slcted.png",
       "text": "主页"
     }, {
       "pagePath": "pages/coupon/coupon",
-      "iconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_coupon.png",
-      "selectedIconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_coupon_slcted.png",
+      "iconPath": "images/Ui_Image_coupon.png",
+      "selectedIconPath": "images/Ui_Image_coupon_slcted.png",
       "text": "我的优惠券"
     }, {
       "pagePath": "pages/cart/cart",
-      "iconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_cart.png",
-      "selectedIconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_cart_slcted.png",
+      "iconPath": "images/Ui_Image_cart.png",
+      "selectedIconPath": "images/Ui_Image_cart_slcted.png",
       "text": "购物车"
     }, {
       "pagePath": "pages/myInfo/myInfo",
-      "iconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_user.png",
-      "selectedIconPath": "http://coupon-1253611430.costj.myqcloud.com/Ui_Image_user_slcted.png",
+      "iconPath": "images/Ui_Image_user.png",
+      "selectedIconPath": "images/Ui_Image_user_slcted.png",
       "text": "个人信息"
     }]
   },

@@ -1,10 +1,10 @@
 <view class="  wx-view_movie_info">
     <navigator url="../detail/detail">
-        <text class="wx-text_title">鲸吞咖喱屋</text>
+        <text class="wx-text_title">{{currentMerchant.merchantName}}</text>
         <text class="wx-text_description_">\n点击进店看看></text>
-        <text class="wx-text_description">\n地址：北京市海淀区西土城路10号邮电大学内(校医院对面)(近北京邮电大学中门)
+        <text class="wx-text_description">\n地址：{{currentMerchant.address}}
         </text>
-        <text class="wx-text_description">参考价格：27元</text>
+        <text class="wx-text_description">参考价格：{{currentMerchant.averangePrice}}元</text>
     </navigator>
 </view>
 
@@ -12,7 +12,7 @@
 <view class="page">
     <view class="page__hd">
         <view class="page__title">优惠券列表</view>
-        <view class="page__desc">一下为店家正在发放的优惠券，以及其送券条件</view>
+        <view class="page__desc">以下为店家正在发放的优惠券，以及其送券条件</view>
     </view>
     <view class="page__bd">
         <view class="weui-panel weui-panel_access">

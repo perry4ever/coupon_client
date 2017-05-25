@@ -4,12 +4,15 @@ const app = getApp()
 
 Page({
     data: {
-        bannerImgUrl:[],
-        bannerName:[],
-        bannerScore:[],
-        bannerAveragePrice:[],
-        bannerAddress:[],
-        bannerCouponUrl:[],
+        // bannerImgUrl:[],
+        // bannerName:[],
+        // bannerScore:[],
+        // bannerAveragePrice:[],
+        // bannerAddress:[],
+        // bannerCouponUrl:[],
+        merchantList0:[],
+        merchantList1: [],
+        merchantList2: [],
         tabs: ["服务", "餐饮", "娱乐"],
         activeIndex: 1,
         sliderOffset: 0,
@@ -38,16 +41,48 @@ Page({
             }
         });
 
-        var merchantList=wx.getStorageSync('merchantList')
 
-        for (var i = 0; i < merchantList.length;i+=1){
-            var aMerchant=merchantList[i]
-            bannerImgUrl.push(config.imgUrlPre+aMerchant.merchantId+config.imgUrlSub)
-            bannerName.push(aMerchant.merchantName)
-            bannerAddress.push(aMerchant.address)
-            bannerAveragePrice.push(aMerchant.averagePrice)
-            bannerScore.push(aMerchant.score)
+        var tmp=wx.getStorageSync('merchantList')
+        var tmp0=[];
+        var tmp1=[];
+        var tmp2=[];
+
+        for(var i=0;i<tmp.length;i+=1){
+          tmp[i].bannerUrl=config.imgUrlPre+config.merchant+tmp[i].merchantId+config.imgUrlSub
+          console.log(tmp[i].bannerUrl)
+
+          var starStyle = 'wx-image_movielist_item_score allstar' + tmp[i].score
+          tmp[i].starStyle=starStyle
+          console.log(starStyle)
+
+          if (tmp[i].hasdaijin == 1) tmp[i].hasdaijin = true
+          else tmp[i].hasdaijin = false
+          if (tmp[i].hasmaisong == 1) tmp[i].hasmaisong = true
+          else tmp[i].hasmaisong = false
+          if (tmp[i].hasmanjian == 1) tmp[i].hasmanjian = true
+          else tmp[i].hasmanjian = false
+          if (tmp[i].hasmanzhe == 1) tmp[i].hasmanzhe = true
+          else tmp[i].hasmanzhe = false
+
+          wx.setStorageSync(tmp[i].merchantName, tmp[i])
+
+          if(tmp[i].merchantType=='服务'){
+            tmp0.push(tmp[i])
+          }
+          else if(tmp[i].merchantType=='餐饮'){
+            tmp1.push(tmp[i])
+          }
+          else{
+            tmp2.push(tmp[i])
+          }
         }
+        console.log(tmp1)
+        
+        this.setData({
+          merchantList0: tmp0,
+          merchantList1: tmp1,
+          merchantList2: tmp2,
+        })
         
     },
     tabClick: function (e) {
@@ -60,5 +95,13 @@ Page({
     	wx.navigateTo ({
             url: '../search/search'
         })
+    },
+    tapToFetchCoupon: function(e){
+      var merchantName = e.currentTarget.id
+      console.log('in tapToFetchCoupon')
+      wx.setStorageSync('chosenMerchantName', merchantName)
+      wx.navigateTo({
+        url: '../fetchCoupon/fetchCoupon'
+      })
     }
 })

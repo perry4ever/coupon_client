@@ -6,25 +6,25 @@
         <swiper-item class="swiper-item">
             <navigator class="wx-navigator_item item4" url="../fetchCoupon/fetchCoupon">
                 <text class="wx-text_sliteitem_title" >艺美人生美容美发：满88元减15</text>
-                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/maisong.png"/>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://couponhola-1253611430.costj.myqcloud.com/maisong.png"/>
             </navigator>
         </swiper-item>
         <swiper-item  >
             <navigator class="wx-navigator_item item2" url="../fetchCoupon/fetchCoupon">
                 <text class="wx-text_sliteitem_title">鲸吞咖喱屋：代金5元</text>
-                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://couponhola-1253611430.costj.myqcloud.com/manzhe.png"/>
             </navigator>
         </swiper-item>
         <swiper-item  >
             <navigator class="wx-navigator_item item3" url="../fetchCoupon/fetchCoupon">
                 <text class="wx-text_sliteitem_title" >杨记黄焖鸡：满50元打8折</text>
-                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png"/>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://couponhola-1253611430.costj.myqcloud.com/manjian.png"/>
             </navigator>
         </swiper-item>
         <swiper-item  >
             <navigator class="wx-navigator_item" url="../fetchCoupon/fetchCoupon" >
                 <text class="wx-text_sliteitem_title" >杨国福麻辣烫：买1送1</text>
-                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>
+                <image class="wx-image_recommand_couponIamge" mode="aspectFit" src="http://couponhola-1253611430.costj.myqcloud.com/daijin.png"/>
             </navigator>
         </swiper-item>
     </swiper>
@@ -58,104 +58,81 @@
                 <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
             </view>
             <view class="weui-tab__panel">
-                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
-                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
-                            <view class="wx-view_movilelist_item" >
-                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/hairCut.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
-                                <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >艺美人生美容美发</text>
-                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
-                                    <view class="wx-image_itemSubImageView">
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manjian.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
-                                    </view>
-                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
-                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
-                                </view>
-                            </view>
-                        </navigator>
-                    </scroll-view>
-                </view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
-                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
-                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
-                            <view class="wx-view_movilelist_item" >
-                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/1.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
-                                <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >杨国福麻辣烫</text>
-                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
-                                    <view class="wx-image_itemSubImageView">
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/maisong.png"/>
-                                    </view>
-                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
-                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
-                                </view>
-                            </view>
-                        </navigator>
 
-                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
-                            <view class="wx-view_movilelist_item" >
-                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
-                                <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >鲸吞咖喱屋</text>
-                                    <text class="wx-image_movielist_item_score allstar45">9.0</text>
-                                    <view class="wx-image_itemSubImageView">
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manjian.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/maisong.png"/>
-                                    </view>
-                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
-                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
-                                </view>
-                            </view>
-                        </navigator>
 
-                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
-                            <view class="wx-view_movilelist_item" >
-                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/3.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
-                                <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >杨记黄焖鸡</text>
-                                    <text class="wx-image_movielist_item_score allstar45">9.0</text>
-                                    <view class="wx-image_itemSubImageView">
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/maisong.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
+                <block wx:for-items="{{merchantList0}}" wx:key="{{item.merchantId}}">
+                    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                        <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                            <view class="wx-navigator_movielist_item" hover-class="navigator-hover" bindtap="tapToFetchCoupon" id="{{item.merchantName}}">
+                                <view class="wx-view_movilelist_item" >
+                                    <image class="wx-image_movielist_item_cover" mode="aspectFit" src="{{item.bannerUrl}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                    <view class="wx-view_6zMKSh" >
+                                        <text class="wx-image_movielist_item_title" >{{item.merchantName}}</text>
+                                        <text class="{{item.starStyle}}">{{item.score}}</text>
+                                        <view class="wx-image_itemSubImageView">
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manzhe.png" wx:if="{{ item.hasmanzhe}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/daijin.png" wx:if="{{ item.hasdaijin}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manjian.png" wx:if="{{ item.hasmanjian}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/maisong.png" wx:if="{{ item.hasmaisong}}"/>
+                                        </view>
+                                        <text class="wx-image_movielist_item_director" >\n人均价格：{{item.averangePrice}}</text>
+                                        <text class="wx-image_movielist_item_actors" >\n地址：{{item.address}}</text>
                                     </view>
-                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
-                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
                                 </view>
                             </view>
-                        </navigator>
-
-                    </scroll-view>
-                </view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
-                    <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
-                        <navigator class="wx-navigator_movielist_item" hover-class="navigator-hover" url="../fetchCoupon/fetchCoupon">
-                            <view class="wx-view_movilelist_item" >
-                                <image class="wx-image_movielist_item_cover" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/ktv.jpg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
-                                <view class="wx-view_6zMKSh" >
-                                    <text class="wx-image_movielist_item_title" >果冻ktv</text>
-                                    <text class="wx-image_movielist_item_score allstar45">8.5</text>
-                                    <view class="wx-image_itemSubImageView">
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/daijin.png"/>
-                                        <image class="wx-image_itemSubImage"src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png"/>
+                        </scroll-view>
+                    </view>
+                </block>
+                <block wx:for-items="{{merchantList1}}" wx:key="{{item.merchantId}}">
+                    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                        <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                            <view class="wx-navigator_movielist_item" hover-class="navigator-hover" bindtap="tapToFetchCoupon" id="{{item.merchantName}}">
+                                <view class="wx-view_movilelist_item" >
+                                    <image class="wx-image_movielist_item_cover" mode="aspectFit" src="{{item.bannerUrl}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                    <view class="wx-view_6zMKSh" >
+                                        <text class="wx-image_movielist_item_title" >{{item.merchantName}}</text>
+                                        <text class="{{item.starStyle}}">{{item.score}}</text>
+                                        <view class="wx-image_itemSubImageView">
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manzhe.png" wx:if="{{ item.hasmanzhe}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/daijin.png" wx:if="{{ item.hasdaijin}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manjian.png" wx:if="{{ item.hasmanjian}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/maisong.png" wx:if="{{ item.hasmaisong}}"/>
+                                        </view>
+                                        <text class="wx-image_movielist_item_director" >\n人均价格：{{item.averangePrice}}</text>
+                                        <text class="wx-image_movielist_item_actors" >\n地址：{{item.address}}</text>
                                     </view>
-                                    <text class="wx-image_movielist_item_director" >\n人均：￥32</text>
-                                    <text class="wx-image_movielist_item_actors" >\n地址：北京有点大学中门3号</text>
                                 </view>
                             </view>
-                        </navigator>
-                    </scroll-view>
-                </view>
+                        </scroll-view>
+                    </view>
+                </block>
+                <block wx:for-items="{{merchantList2}}" wx:key="{{item.merchantId}}">
+                    <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                        <scroll-view class="wx-scroll-view_6Bnkj2" lower-threshold="50" scroll-y="true" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+                            <view class="wx-navigator_movielist_item" hover-class="navigator-hover" bindtap="tapToFetchCoupon" id="{{item.merchantName}}">
+                                <view class="wx-view_movilelist_item" >
+                                    <image class="wx-image_movielist_item_cover" mode="aspectFit" src="{{item.bannerUrl}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(); "/>
+                                    <view class="wx-view_6zMKSh" >
+                                        <text class="wx-image_movielist_item_title" >{{item.merchantName}}</text>
+                                        <text class="{{item.starStyle}}">{{item.score}}</text>
+                                        <view class="wx-image_itemSubImageView">
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manzhe.png" wx:if="{{ item.hasmanzhe}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/daijin.png" wx:if="{{ item.hasdaijin}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/manjian.png" wx:if="{{ item.hasmanjian}}"/>
+                                            <image class="wx-image_itemSubImage"src="http://couponhola-1253611430.costj.myqcloud.com/maisong.png" wx:if="{{ item.hasmaisong}}"/>
+                                        </view>
+                                        <text class="wx-image_movielist_item_director" >\n人均价格：{{item.averangePrice}}</text>
+                                        <text class="wx-image_movielist_item_actors" >\n地址：{{item.address}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </scroll-view>
+                    </view>
+                </block>
             </view>
         </view>
     </view>
 </view>
-
 
 
 

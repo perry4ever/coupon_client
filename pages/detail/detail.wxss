@@ -22,8 +22,6 @@
 .wx-view_movie_info{padding: 20px; display: block; justify-content: flex-end; border-style: none none solid; border-width: 1px; border-color: rgb(196, 196, 196); }
 .wx-view_movie_score{width: 100px; align-self: flex-end; order: 1; display: flex; height: 100px; background-color: rgb(255, 255, 255); flex-direction: column; align-items: center; justify-content: center; float: right; box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -ms-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -o-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -moz-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); -webkit-box-shadow: 0px 0px 3px 3px rgba(171,171,171,0.8); }
 .wx-text_score_value{text-align: center; font-size: 32px; height: 40px; }
-.wx-text_score_stars{font-size: 14px; text-align: center; color: rgb(251, 176, 0); height: 12px; background-image: url("http://coupon-1253611430.costj.myqcloud.com/star.png"); background-size: 65px 132px; width: 65px; margin-bottom: 5px; background-position-x: 50%; background-position-y: 50%; }
-.wx-image_movie_cover{width: 50%; }
 
 .wx-scroll-menu{width: 750rpx; height:300rpx }
 .wx-scroll-comment{width: 750rpx; height:400rpx; overflow: hidden}
@@ -41,3 +39,26 @@
 
 
 .wx-input_olF6xn{text-align: left; background-color: rgb(255, 255, 255); margin-bottom: 10px; padding: 5px 10px; width: 675rpx; display: inline-block; height: 150rpx; border-style: none; outline: none; font-size: 14px; font-family: "Microsoft YaHei"; }
+
+
+.wx-image_movielist_item_score{background-image: url("http://couponhola-1253611430.costj.myqcloud.com/star.png"); background-repeat: no-repeat; background-position: 0% 50%; color: rgb(153, 153, 153); font-size: 13px; line-height: 1.2em; background-size: 65px 132px; width: 90px; height: 13px; padding-left: 70px; margin-bottom: 5px; }
+
+
+
+.wx-image_movielist_item_score.allstar0{background-position: 0% 100%; background-position-x: 0%; background-position-y: 100%; }
+.wx-image_movielist_item_score.allstar1{background-position: 0% 90%; background-position-x: 0%; background-position-y: 90%; }
+.wx-image_movielist_item_score.allstar2{background-position: 0% 80%; background-position-x: 0%; background-position-y: 80%; }
+.wx-image_movielist_item_score.allstar3{background-position: 0% 70%; background-position-x: 0%; background-position-y: 70%; }
+.wx-image_movielist_item_score.allstar4{background-position: 0% 60%; background-position-x: 0%; background-position-y: 60%; }
+.wx-image_movielist_item_score.allstar5{background-position: 0% 50%; background-position-x: 0%; background-position-y: 50%; }
+.wx-image_movielist_item_score.allstar6{background-position: 0% 40%; background-position-x: 0%; background-position-y: 40%; }
+.wx-image_movielist_item_score.allstar7{background-position: 0% 30%; background-position-x: 0%; background-position-y: 30%; }
+.wx-image_movielist_item_score.allstar8{background-position: 0% 20%; background-position-x: 0%; background-position-y: 20%; }
+.wx-image_movielist_item_score.allstar9{background-position: 0% 10%; background-position-x: 0%; background-position-y: 10%; }
+.wx-image_movielist_item_score.allstar10{background-position: 0% 0%; background-position-x: 0%; background-position-y: 0%; }
+
+
+
+
+
+
