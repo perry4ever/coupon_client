@@ -3,18 +3,28 @@
 
 // 获取全局应用程序实例对象
 var app = getApp();
+var config = require('../../etc/config.js');
 
 // 创建页面实例对象
 Page({
   data:{
-    currentMerchant:{}
+    currentMerchant:{},
+    currentCouponList:[]
   },
   onLoad: function(){
     var tmp=wx.getStorageSync('chosenMerchantName')
     var tmpMerchant=wx.getStorageSync(tmp)
-    console.log('in fetch onload' + tmpMerchant)
+    var couponList = wx.getStorageSync(config.couponsListForFetch + tmp)
+    console.log('in fetch onload' + couponList)
+
+    for(var i=0;i<couponList.length;i+=1){
+      couponList[i].push(config.imgUrlPre + couponList[i][1] + config.imgUrlSub)
+      console.log(couponList[i][4])
+    }
+
     this.setData({
-      currentMerchant:tmpMerchant
+      currentMerchant: tmpMerchant,
+      currentCouponList: couponList
     })
   },
   tapToast: function () {

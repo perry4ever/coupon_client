@@ -1,51 +1,33 @@
 <view class="  wx-view_movie_top">
-    <image class="wx-image_movie_cover" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>
+    <image class="wx-image_movie_cover" src="{{currentMerchant.bannerUrl}}"/>
 </view>
 <view class="  wx-view_movie_info">
     <view class="wx-view_movie_score">
-        <text class="wx-text_score_value">8.4</text>
-        <text class="wx-text_score_stars" ></text>
-        <text class="wx-text_score_uv" > 34776人</text>
+        <text class="wx-text_score_value">{{currentMerchant.score}}</text>
+        <text class="wx-image_movielist_item_score" ></text>
+        <text class="wx-text_score_uv" > {{currentMerchant.scoreNum}}人</text>
     </view>
-    <text class="wx-text_title">鲸吞咖喱屋
+    <text class="wx-text_title">{{currentMerchant.merchantName}}
     </text>
-    <text class="wx-text_description">地址：北京市海淀区西土城路10号邮电大学内(校医院对面)(近北京邮电大学中门)
+    <text class="wx-text_description">地址：{{currentMerchant.address}}
     </text>
-    <text class="wx-text_description">参考价格：27元
+    <text class="wx-text_description">参考价格：{{currentMerchant.averangePrice}}元
     </text>
 </view>
 
 
 <view class="wx-view_section section_actors">
-    <text class="wx-text_section_title">菜单</text>
-    <text class="wx-text_description">\n点击菜品直接加入购物车</text>
+    <text class="wx-text_section_title">商品/服务列表</text>
+    <text class="wx-text_description">\n横向拉动，点击商品/服务直接加入购物车</text>
     <scroll-view class="wx-scroll-menu" lower-threshold="50" scroll-x="True" style="overflow-x: auto; overflow-y: auto; " upper-threshold="50">
         <view class="  wx-view_grm9lE" > 
-            <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
-                <text class="wx-text_item_name">   照烧鸡排饭  </text> 
-                <text class="wx-text_description">   \n17元  </text>
-            </view> 
-            <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
-                <text class="wx-text_item_name">   照烧鸡排饭  </text> 
-                <text class="wx-text_description">   \n16元  </text>
-            </view> 
-            <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
-                <text class="wx-text_item_name">   照烧鸡排饭  </text> 
-                <text class="wx-text_description">   \n14元  </text>
-            </view> 
-            <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
-                <text class="wx-text_item_name">   照烧鸡排饭  </text> 
-                <text class="wx-text_description">   \n11元  </text>
-            </view> 
-            <view class="wx-view_actors_item"  bindtap="tapToast">
-                <image class="wx-image_item_avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/2.jpg"/>                
-                <text class="wx-text_item_name">   照烧鸡排饭  </text> 
-                <text class="wx-text_description">   \n13元  </text>
-            </view> 
+            <block wx:for-items="{{currentGoodList}}" wx:key="{{item.goodId}}">
+                <view class="wx-view_actors_item"  bindtap="tapToast">
+                    <image class="wx-image_item_avatar" mode="aspectFit" src="{{item.goodUrl}}"/>        
+                    <text class="wx-text_item_name">   {{item.goodName}}  </text> 
+                    <text class="wx-text_description">   \n{{item.price}}元  </text>
+                </view> 
+            </block>
         </view>
     </scroll-view>
 </view>
@@ -54,52 +36,22 @@
     <text class="  wx-text_section_title">短评</text>
     <scroll-view class="  wx-scroll-comment" lower-threshold="50" scroll-x="True" style="overflow-x: auto; overflow-y: hidden; " upper-threshold="50">
         <view class="wx-view_grm9lE" > 
-            <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
-                <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
-                <text class="wx-text_kGXxsa">好评好评评</text>
-                <view class="comment_operate">
-                    <text class="listitem_creattime">   2016.10.31  </text>
-                </view>
-            </view> 
-            <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
-                <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
-                <text class="wx-text_kGXxsa">好评好评评</text>
-                <view class="comment_operate">
-                    <text class="listitem_creattime">   2016.10.31  </text>
-                </view>
-            </view> 
-            <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
-                <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
-                <text class="wx-text_kGXxsa">好评好评评</text>
-                <view class="comment_operate">
-                    <text class="listitem_creattime">   2016.10.31  </text>
-                </view>
-            </view> 
-            <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
-                <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
-                <text class="wx-text_kGXxsa">好评好评好评好评好评好评好评好评</text>
-                <view class="comment_operate">
-                    <text class="listitem_creattime">   2016.10.31  </text>
-                </view>
-            </view> 
-            <view class="wx-view_comment_item" >
-                <image class="userinfo-avatar" mode="aspectFit" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png"/>
-                <text class="wx-text_71u3gA">  boilingCapucinoooo </text>  
-                <text class="wx-text_kGXxsa">好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评好评</text>
-                <view class="comment_operate">
-                    <text class="listitem_creattime">   2016.10.31  </text>
-                </view>
-            </view> 
+            <block wx:for-items="{{currentCommentList}}" wx:key="{{item.commentsId}}">
+                <view class="wx-view_comment_item" >
+                    <image class="userinfo-avatar" mode="aspectFit" src="{{item.avatarUrl}}"/>
+                    <text class="wx-text_71u3gA">  {{item.customerName}} </text>  
+                    <text class="wx-text_kGXxsa">{{item.content}}</text>
+                    <view class="comment_operate">
+                        <text class="listitem_creattime">   {{item.createTime}}  </text>
+                    </view>
+                </view> 
+            </block>
         </view>
     </scroll-view>
 </view>
 <view class="wx-view_movie_info">
     <text class="  wx-text_section_title">点击下框输入评论</text>
-    <input class="wx-input_olF6xn" name="input1" placeholder="请输入点评" placeholder-class="placeholderstyle" type="text"/>
+    <input class="wx-input_olF6xn" name="input1" placeholder="请输入点评" placeholder-class="placeholderstyle" bindinput="whenInput" value="{{inputdata}}" type="text"/>
     <button bindtap="tapComment" class="wx-button_zkPe8y" hover-class="button-hover" size="default" type="default">写评论
     </button>
 </view>

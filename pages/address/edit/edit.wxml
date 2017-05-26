@@ -34,7 +34,7 @@
             <view class="weui-cell__bd">
                 <textarea name="address" value="{{ form.address }}" class="weui-textarea" placeholder="请输入收货人地址" style="height: 3.3em" />
                 <view class="weui-textarea-icon" bindtap="chooseLocation">
-                    <image class="icon" src="http://coupon-1253611430.costj.myqcloud.com/Ui_Image_addr_slcted.png"></image>
+                    <image class="icon" src="http://couponhola-1253611430.costj.myqcloud.com/Ui_Image_addr_slcted.png"></image>
                 </view>
             </view>
         </view>

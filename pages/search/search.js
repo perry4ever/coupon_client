@@ -18,8 +18,7 @@ Page({
       wx.request({
         url: 'http://127.0.0.1:5000/searchMerchant',
         data: {
-          merchantName: this.data.inputVal
-          // userInfo
+          // userInfoY
           // nickName: 'nickName',
           // openId: '5615614651451455',
           // avatarUrl: 'this.avatarUrl'
@@ -27,7 +26,7 @@ Page({
         header: {
           'content-type': 'application/x-www-form-urlencoded'
         },
-        method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+        method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
         // header: {}, // 设置请求的 header
         success: function (res) {
           if (res.data != null) {
@@ -43,10 +42,10 @@ Page({
             })
           }
           for (var i = 0; i < that.data.merchantList.length;i+=1){
-            wx.setStorage({
-              key: that.data.merchantList[i][0],
-              data: that.data.merchantList[i][1]
-            })
+            // wx.setStorage({
+            //   key: that.data.merchantList[i][0],
+            //   data: that.data.merchantList[i][1]
+            // })
             that.data.merchantNameList.push(that.data.merchantList[i][0])
             console.log(that.data.merchantNameList)
           }
@@ -120,10 +119,10 @@ Page({
       })
 
       var chosenMerchantID = wx.getStorageSync(that.data.wxSearchData.mindKeys[0])
-      wx.setStorageSync('chosenMerchantID', chosenmerchantID)
+      wx.setStorageSync('chosenMerchantID', chosenMerchantID)
       wx.setStorageSync('chosenMerchantName', that.data.wxSearchData.mindKeys[0])
 
-      wx.redirectTo({
+      wx.navigateTo({
         url: '../fetchCoupon/fetchCoupon',
       })
     },

@@ -1,6 +1,6 @@
 <view>
 	<view class="userinfo">
-		<image class="userinfo-avatar" src="http://coupon-1253611430.costj.myqcloud.com/userIcon.png" background-size="cover"></image>
+		<image class="userinfo-avatar" src="http://couponhola-1253611430.costj.myqcloud.com/userIcon.png" background-size="cover"></image>
 		<text class="userinfo-nickname">boilingCapucinooooo</text>
 	</view>
 	<view class="info_list">

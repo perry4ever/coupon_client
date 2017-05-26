@@ -60,6 +60,8 @@ function wxSearchInput(e, that, callBack){
     var temData = that.data.wxSearchData;
     var text = e.detail.value;
     var mindKeys = [];
+
+    console.log(text)
     
     if(typeof(text) == "undefined" || text.length == 0){
         

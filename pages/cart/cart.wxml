@@ -9,7 +9,7 @@
     <view class="weui-panel__bd">
         <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
             <view class="weui-media-box__hd weui-media-box__hd_in-appmsg" bindtap="navigateTo" >
-                <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/3.jpg" />
+                <image class="weui-media-box__thumb" src="http://couponhola-1253611430.costj.myqcloud.com/3.jpg" />
                 
             </view>
             <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">

@@ -15,8 +15,8 @@
 .wx-view_actors_item{display: block; flex-direction: column; width: 100px; justify-content: center; margin-right: 10px; flex-grow: 0; flex-shrink: 0; flex-basis: auto; }
 
 .wx-view_comment_item{display: block; flex-direction: column; width: 400rpx; height: 700rpx; justify-content: center; margin-right: 10px; flex-grow: 0; flex-shrink: 0; flex-basis: auto; }
-.comment_operate{display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; position: absolute; top: 360rpx}
-.listitem_creattime{font-size: 12px; color: rgb(186, 186, 186); padding-right: 2px; }
+.comment_operate{display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px; position: absolute; top: 360rpx}
+.listitem_creattime{font-size: 12px; color: rgb(186, 186, 186); padding-right: 0px; }
 
 
 .wx-view_movie_info{padding: 20px; display: block; justify-content: flex-end; border-style: none none solid; border-width: 1px; border-color: rgb(196, 196, 196); }
@@ -41,7 +41,7 @@
 .wx-input_olF6xn{text-align: left; background-color: rgb(255, 255, 255); margin-bottom: 10px; padding: 5px 10px; width: 675rpx; display: inline-block; height: 150rpx; border-style: none; outline: none; font-size: 14px; font-family: "Microsoft YaHei"; }
 
 
-.wx-image_movielist_item_score{background-image: url("http://couponhola-1253611430.costj.myqcloud.com/star.png"); background-repeat: no-repeat; background-position: 0% 50%; color: rgb(153, 153, 153); font-size: 13px; line-height: 1.2em; background-size: 65px 132px; width: 90px; height: 13px; padding-left: 70px; margin-bottom: 5px; }
+.wx-image_movielist_item_score{background-image: url("http://couponhola-1253611430.costj.myqcloud.com/star.png"); background-repeat: no-repeat; background-position: 0% 50%; color: rgb(153, 153, 153); font-size: 13px; line-height: 1.2em; background-size: 65px 132px; width: 90px; height: 13px; padding-right: 0px; margin-bottom: 5px; }
 
 
 

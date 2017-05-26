@@ -1,3 +1,32 @@
+<!--<view class="page">
+    <view class="page__hd">
+        <view class="page__title">优惠券列表</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <view class="kind-list">
+            <block wx:for="{{list}}">
+                <view class="kind-list__item">
+                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+                        <view class="weui-flex__item">{{item.name}}</view>
+                        <image class="kind-list__img_level1" src="http://couponhola-1253611430.costj.myqcloud.com/{{item.id}}.jpg"></image>
+                    </view>
+                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                        <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+                            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                                <navigator url="../couponInfo/couponInfo" class="weui-cell weui-cell_access">
+                                    <image class="kind-list__img_level2" src="http://couponhola-1253611430.costj.myqcloud.com/{{page.en}}.png"></image>
+                                    <view class="weui-cell__bd"></view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access">{{page.ch}}</view>
+                                </navigator>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>-->
+
 <view class="page">
     <view class="page__hd">
         <view class="page__title">优惠券列表</view>
@@ -8,13 +37,13 @@
                 <view class="kind-list__item">
                     <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
                         <view class="weui-flex__item">{{item.name}}</view>
-                        <image class="kind-list__img_level1" src="http://coupon-1253611430.costj.myqcloud.com/{{item.id}}.jpg"></image>
+                        <image class="kind-list__img_level1" src="	http://coupon-1253611430.costj.myqcloud.com/{{item.id}}.jpg"></image>
                     </view>
                     <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
                         <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
                             <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
                                 <navigator url="../couponInfo/couponInfo" class="weui-cell weui-cell_access">
-                                    <image class="kind-list__img_level2" src="http://coupon-1253611430.costj.myqcloud.com/{{page.en}}.png"></image>
+                                    <image class="kind-list__img_level2" src="	http://coupon-1253611430.costj.myqcloud.com/{{page.en}}.png"></image>
                                     <view class="weui-cell__bd"></view>
                                     <view class="weui-cell__ft weui-cell__ft_in-access">{{page.ch}}</view>
                                 </navigator>

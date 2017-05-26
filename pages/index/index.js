@@ -43,13 +43,35 @@ Page({
 
 
         var tmp=wx.getStorageSync('merchantList')
+        var goodlist=wx.getStorageSync('goodList')
+        var commentList = wx.getStorageSync('commentList')
         var tmp0=[];
         var tmp1=[];
         var tmp2=[];
 
+        for (var j = 0; j < commentList.length; j += 1) {
+          commentList[j].avatarUrl = config.imgUrlPre + config.customer + commentList[j].customerName + config.imgUrlSub
+        }
+
         for(var i=0;i<tmp.length;i+=1){
           tmp[i].bannerUrl=config.imgUrlPre+config.merchant+tmp[i].merchantId+config.imgUrlSub
           console.log(tmp[i].bannerUrl)
+          tmp[i].goodList = []
+
+          for(var j=0;j<goodlist.length;j+=1){
+            if (goodlist[j].merchantName == tmp[i].merchantName){
+              tmp[i].goodList.push(goodlist[j])
+            }
+          }
+
+          tmp[i].commentList = []
+
+          for (var j = 0; j < commentList.length; j += 1) {
+            if (commentList[j].merchantName == tmp[i].merchantName) {
+              tmp[i].commentList.push(commentList[j])
+            }
+          }
+
 
           var starStyle = 'wx-image_movielist_item_score allstar' + tmp[i].score
           tmp[i].starStyle=starStyle

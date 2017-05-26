@@ -17,69 +17,29 @@
     <view class="page__bd">
         <view class="weui-panel weui-panel_access">
             <view class="weui-panel__bd">
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetailTap">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/maisong.png" />
+                <block wx:for-items="{{currentCouponList}}" wx:key="{{item[0]}}">
+                    <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetailTap">
+                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                            <image class="weui-media-box__thumb" src="{{item[4]}}" />
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" wx:if="{{ item[1] == 'maisong' }}">
+                            <view class="weui-media-box__title">买{{item[2]}}送{{item[3]}}</view>
+                            <view class="weui-media-box__desc">送券条件：消费满50元</view>
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" wx:if="{{ item[1] == 'manzhe' }}">
+                            <view class="weui-media-box__title">满{{item[2]}}打{{item[3]}}折</view>
+                            <view class="weui-media-box__desc">送券条件：消费满50元</view>
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" wx:if="{{ item[1] == 'manjian' }}">
+                            <view class="weui-media-box__title">满{{item[2]}}减{{item[3]}}</view>
+                            <view class="weui-media-box__desc">送券条件：消费满50元</view>
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" wx:if="{{ item[1] == 'daijin' }}">
+                            <view class="weui-media-box__title">代金{{item[2]}}</view>
+                            <view class="weui-media-box__desc">送券条件：消费满50元</view>
+                        </view>
                     </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">买一送一</view>
-                        <view class="weui-media-box__desc">送券条件：消费满50元</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">满50减10</view>
-                        <view class="weui-media-box__desc">送券条件：点击直接领取</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="gotoDetailTap">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manzhe.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">买一送一</view>
-                        <view class="weui-media-box__desc">送券条件：消费满50元</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active"  bindtap="gotoDetailTap">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/daijin.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">买一送一</view>
-                        <view class="weui-media-box__desc">送券条件：消费满50元</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">满50减10</view>
-                        <view class="weui-media-box__desc">送券条件：点击直接领取</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">满50减10</view>
-                        <view class="weui-media-box__desc">送券条件：点击直接领取</view>
-                    </view>
-                </navigator>
-                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap="tapToast">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="http://coupon-1253611430.costj.myqcloud.com/manjian.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">满50减10</view>
-                        <view class="weui-media-box__desc">送券条件：点击直接领取</view>
-                    </view>
-                </navigator>
+                </block>
             </view>
         </view>
     </view>
